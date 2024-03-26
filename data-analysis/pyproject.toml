@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "soft-robotics"
+version = "0.1.0"
+description = "Data analysis code for 24-673 Soft Robotics Project."
+authors = ["Casey Walker <cmwalker@andrew.cmu.edu>"]
+readme = "readme"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.3"
+matplotlib = "^3.8.2"
+
+
+[tool.yapf]
+COLUMN_LIMIT = 80
+SPACES_BEFORE_COMMENT = 1
+
+ARITHMETIC_PRECEDENCE_INDICATION = true
+NO_SPACES_AROUND_SELECTED_BINARY_OPERATORS = ["*", "/", "**"]
+
+SPLIT_BEFORE_ARITHMETIC_OPERATOR = true
+SPLIT_BEFORE_BITWISE_OPERATOR = true
+SPLIT_BEFORE_EXPRESSION_AFTER_OPENING_PAREN = true
+SPLIT_BEFORE_LOGICAL_OPERATOR = true
+SPLIT_COMPLEX_COMPREHENSION = true
+SPLIT_BEFORE_FIRST_ARGUMENT = true
+
+DEDENT_CLOSING_BRACKETS = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

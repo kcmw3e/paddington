@@ -42,9 +42,10 @@ class Lumberyard {
 
     /// @brief Save a CSV line in the current save file.
     ///
+    /// @param `t` The time of sensor readings.
     /// @param `val1` The value read from the first sensor.
     /// @param `val2` The value read from the second sensor.
-    void save_csv_line(uint32_t val1, uint32_t val2);
+    void save_csv_line(uint32_t t, uint32_t val1, uint32_t val2);
 };
 
 #endif // LUMBERYARD_H

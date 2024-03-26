@@ -44,7 +44,7 @@ void Lumberyard::change_savefile_to(const char* filepath) {
     }
 }
 
-void Lumberyard::save_csv_line(uint32_t val1, uint32_t val2) {
+void Lumberyard::save_csv_line(uint32_t t, uint32_t val1, uint32_t val2) {
     if (!this->savefile)
         return;
 
@@ -53,7 +53,7 @@ void Lumberyard::save_csv_line(uint32_t val1, uint32_t val2) {
 
     char buf[CSV_LINE_BUF_LEN];
     auto n = snprintf(
-        buf, sizeof(buf) / sizeof(*buf), "%ld,%d,%d\n", micros(), val1, val2
+        buf, sizeof(buf) / sizeof(*buf), "%u,%u,%u\n", t, val1, val2
     );
     this->savefile.write(buf, n);
     this->savefile.flush();

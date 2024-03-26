@@ -128,12 +128,13 @@ void check_serial() {
 
 /// @brief Save the sensor readings to the SD card.
 void save() {
-    auto val1 = analogRead(SENSOR_PIN_1);
-    auto val2 = analogRead(SENSOR_PIN_2);
+    uint32_t t = micros();
+    uint32_t val1 = analogRead(SENSOR_PIN_1);
+    uint32_t val2 = analogRead(SENSOR_PIN_2);
 
     if (ly.should_save_data) {
-        DEBUG_INFO("%d, %d", val1, val2);
+        DEBUG_INFO("%u, %u, %u", t, val1, val2);
     }
 
-    ly.save_csv_line(val1, val2);
+    ly.save_csv_line(t, val1, val2);
 }

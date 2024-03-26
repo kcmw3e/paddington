@@ -1,0 +1,30 @@
+# Python generated files
+# ---------------------------------------------------------------------------- #
+__pycache__
+
+# Poetry generated files
+# ---------------------------------------------------------------------------- #
+# ignore lock since consistent builds aren't a worry
+poetry.lock
+
+# C++ generated files
+# ---------------------------------------------------------------------------- #
+# compiled files
+*.o
+*.so
+*.dll
+
+# libraries
+*.a
+*.lib
+
+# executables
+*.out
+*.exe
+*.app
+
+# build directories
+build/
+
+# clangd language server configuration
+.clangd

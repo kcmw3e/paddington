@@ -1,0 +1,24 @@
+# Casey Walker (2024)
+# 24-673 Soft Robotics
+# Carnegie Mellon University
+# -------------------------------------------------------------------------- //
+
+---
+Language:      Cpp
+BasedOnStyle:  LLVM
+IndentWidth:   4
+ColumnLimit:   80
+AllowShortFunctionsOnASingleLine: Empty
+PointerAlignment: Left
+
+AlignAfterOpenBracket: BlockIndent
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveMacros: AcrossEmptyLines
+AlignTrailingComments: true
+AlignEscapedNewlines: true
+AlignOperands: AlignAfterOperator
+
+BreakBeforeBinaryOperators: NonAssignment
+MaxEmptyLinesToKeep: 3
+PenaltyReturnTypeOnItsOwnLine: 999
+---

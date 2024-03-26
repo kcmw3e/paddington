@@ -1,0 +1,12 @@
+Casey Walker (2024)
+24-673 Soft Robotics
+Carnegie Mellon University
+--------------------------------------------------------------------------------
+
+This data is for calibration of the Tekscan FlexiForce ESS102 sensors used in
+our soft robotics project.
+
+Data is saved in CSV format with the following headers:
+    "Time [microseconds]", "Sensor 1", "Sensor 2"
+
+The sensor readings are on a scale of 0-1023 mapping between 0-3.3V.

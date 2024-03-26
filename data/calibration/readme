@@ -10,3 +10,7 @@ Data is saved in CSV format with the following headers:
     "Time [microseconds]", "Sensor 1", "Sensor 2"
 
 The sensor readings are on a scale of 0-1023 mapping between 0-3.3V.
+
+Note:
+    For the op-amp circuit, time was logged incorrectly. However, the save
+    interval is known to be 10ms between data entry.
